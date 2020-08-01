@@ -22,7 +22,7 @@ var server = http.createServer(serverFunction).listen(3000);
 
 server.on('request', function(req, res) {
   
-    // WORK NOTE
+    // WORK NOTES
 
     if (req.url === '/work') {
     	if (req.method === 'POST'){
