@@ -33,7 +33,6 @@ server.on('request', function(req, res) {
 
 		req.on('end',()=>{
 			const t = parse(body);
-			const q = JSON.stringify(t);
       fs.appendFile('./notess/work.txt',`\n ${t.message}.`,err =>{
      if (err){
      	console.log('Err')
